@@ -11,6 +11,7 @@ import NotesPage from './pages/NotesPage';
 import NotFoundPage from './pages/NotFoundPage';
 import PrivacyPage from './pages/PrivacyPage';
 import styles from "./styles/App.module.css";
+import React from 'react';
 
 function App() {
 

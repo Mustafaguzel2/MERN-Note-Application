@@ -4,6 +4,7 @@ import { Note } from "../models/note";
 import { NoteInput } from "../network/notes_api";
 import * as NotesApi from "../network/notes_api";
 import TextInputField from "./form/TextInputField";
+import React from 'react';
 
 interface AddEditNoteDialogProps {
     noteToEdit?: Note,

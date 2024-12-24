@@ -6,6 +6,7 @@ import { Alert, Button, Form, Modal } from "react-bootstrap";
 import TextInputField from "./form/TextInputField";
 import styleUtils from "../styles/utils.module.css";
 import { useState } from 'react';
+import React from 'react';
 import { ConflictError } from "../errors/http_errors";
 
 interface SignUpModalProps {

@@ -8,8 +8,13 @@ import session from "express-session";
 import env from "./util/validateEnv";
 import MongoStore from "connect-mongo";
 import { requiresAuth } from "./middleware/auth";
+import cors from "cors";
 
 const app = express();
+
+app.use(cors({
+    origin: "http://localhost:3000",
+}));
 
 app.use(morgan("dev"));
 
@@ -30,6 +35,12 @@ app.use(session({
 
 app.use("/api/users", userRoutes);
 app.use("/api/notes", requiresAuth, notesRoutes);
+
+app.get("/", (req, res) => {
+    res.send("Welcome to the API");
+});
+
+app.get("/favicon.ico", (req, res) => res.status(204).end());
 
 app.use((req, res, next) => {
     next(createHttpError(404, "Endpoint not found"));

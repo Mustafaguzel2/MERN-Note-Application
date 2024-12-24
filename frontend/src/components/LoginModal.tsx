@@ -7,6 +7,7 @@ import TextInputField from "./form/TextInputField";
 import styleUtils from "../styles/utils.module.css";
 import { useState } from 'react';
 import { UnauthorizedError } from "../errors/http_errors";
+import React from 'react';
 
 interface LoginModalProps {
     onDismiss: () => void,

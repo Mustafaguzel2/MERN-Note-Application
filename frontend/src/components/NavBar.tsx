@@ -3,6 +3,7 @@ import { User } from "../models/user";
 import NavBarLoggedInView from "./NavBarLoggedInView";
 import NavBarLoggedOutView from "./NavBarLoggedOutView";
 import { Link } from "react-router-dom";
+import React from 'react';
 
 interface NavBarProps {
     loggedInUser: User | null,

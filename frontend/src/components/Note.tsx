@@ -4,6 +4,7 @@ import { Card } from "react-bootstrap";
 import { Note as NoteModel } from "../models/note";
 import { formatDate } from "../utils/formatDate";
 import { MdDelete } from "react-icons/md";
+import React from 'react';
 
 interface NoteProps {
     note: NoteModel,

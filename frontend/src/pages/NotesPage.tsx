@@ -1,3 +1,4 @@
+import React from 'react';
 import { Container } from "react-bootstrap";
 import NotesPageLoggedInView from "../components/NotesPageLoggedInView";
 import NotesPageLoggedOutView from "../components/NotesPageLoggedOutView";
